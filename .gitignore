@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.tmp/
+.cache/
+yarn-error.log
+*.log
+*~
+*.swp
+*.tmp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
