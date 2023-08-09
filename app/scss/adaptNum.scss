@@ -1,0 +1,15 @@
+/*-----Адаптив-----*/
+$maxWidth: 1366;
+@function adaptNum($Size: 0, $bigAdaptive: false) {
+	@if ($bigAdaptive) {
+		// Меняем под ширину больше шаблона
+		@return calc($Size * 100 / $maxWidth * 1vw);
+	} @else {
+		// Не меняем под ширину больше шаблона(по умолчанию)
+		@if ($maxWidth <= 100vw) {
+			@return calc($Size * 100 / $maxWidth * 1vw);
+		} @else {
+			@return ($Size + px)
+		}
+	}
+}
