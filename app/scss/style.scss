@@ -12,7 +12,7 @@ body{
 	width: 595px;
 	background-color: #FFF;
 	height: 842px;
-	display: block;
+	display: flex;
 	margin: 20px auto;
 }
 .info{
@@ -20,7 +20,6 @@ body{
 	background-color: #174180;
 	width: 185px;
 	height: 100%;
-	float: left;
 	&__wrapper{
 		margin-left: 15px;
 	}
@@ -159,7 +158,6 @@ body{
 }
 
 .article {
-	float: inline-start;
 	width: 375px;
 	&__wrapper{
 		margin-top: 51px;
