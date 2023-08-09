@@ -1,0 +1,181 @@
+@import "nullstyle.scss";
+@import "icons.scss";
+@import "fonts.scss";
+
+body{
+	width: 100vw;
+	background-color: #CCC;
+	font-style: normal;
+	overflow-x: hidden;
+}
+.wrapper{
+	width: 595px;
+	background-color: #FFF;
+	height: 842px;
+	display: block;
+	margin: 20px auto;
+}
+.info{
+	font-family: Open Sans;
+	background-color: #174180;
+	width: 185px;
+	height: 100%;
+	float: left;
+	&__wrapper{
+		margin-left: 15px;
+	}
+	&__avatar{
+		margin-top: 45px;
+		width: 125px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 50%;
+	}
+	&__title{
+		color: #FFF;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: normal; 
+		margin-top: 15px;
+
+		&_bold{
+			font-weight: 800;
+		}
+	}
+	&__subtitle{
+		color: #FFF;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal; 
+		margin-top: 1px;
+	}
+	&__article{
+		color: #FFF;
+		font-size: 8px;
+		max-width: 152px;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 14px;
+	}
+	.header{
+		&_first{
+			margin-top: 18px;
+		}
+		&_second{
+			margin-top: 25px;
+		}
+		&_third{
+			margin-top: 36px;
+		}
+	}
+	.info-box{
+		margin-top: 5px;
+	}
+}
+
+.info-box{
+	font-family: Open Sans;
+	display: flex;
+	flex-direction: column;
+	height: 44px;
+	flex-wrap: wrap;
+	&__item{
+		color: #FFF;
+		height: 11px;
+		font-size: 8px;
+		line-height: normal;
+		&_grey{
+			font-style: italic;
+			opacity: 0.5;
+		}
+	}
+}
+
+.header{
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	color: #174180;
+	&_lightblue{
+		color: #56CCF2;
+	}
+}
+
+.contacts{
+	margin-top: 7px;
+	&__item{
+	}
+	&__link{
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		&:link, &:visited, &:active{
+			color: #56CCF2;
+			font-family: Open Sans;
+		}
+		&:before{
+			display: inline-block;
+			width: 10px;
+			margin-right: 7px;
+		}
+	}
+}
+
+.references{
+	&__link{
+		margin-top: 12px;
+		display: block;
+		color: #FFF;
+		font-family: Open Sans;
+		font-size: 8px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration: underline; 
+		&:before{
+			text-decoration: none;
+			display: inline-block;
+			margin-right: 6px;
+			font-size: 20px;
+			color: #FFF;
+		}
+		&:first-child{
+		margin-top: 7px;
+	}
+	}
+}
+
+.article {
+	&__attachment {
+	}
+}
+.attachment {
+	&__header {
+		color: #174180;
+		font-family: Open Sans;
+		font-size: 2.68vw;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	&__list {
+	}
+	&__paragraph {
+	}
+	&__item {
+	}
+}
+.paragraph {
+	&__info {
+	}
+	&__header {
+	}
+	&__date {
+	}
+	&__text {
+	}
+}
