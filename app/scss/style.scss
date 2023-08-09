@@ -118,6 +118,7 @@ body{
 			font-family: Open Sans;
 		}
 		&:before{
+			font-family: 'icons';
 			display: inline-block;
 			width: 10px;
 			margin-right: 7px;
@@ -126,16 +127,15 @@ body{
 }
 
 .references{
-	&__link{
+	&__block{
+		display: flex;
+		flex-direction: row;
 		margin-top: 12px;
-		display: block;
-		color: #FFF;
-		font-family: Open Sans;
-		font-size: 8px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		text-decoration: underline; 
+		&:first-child{
+			margin-top: 7px;
+		}
+	}
+	&__icon{
 		&:before{
 			text-decoration: none;
 			display: inline-block;
@@ -143,39 +143,134 @@ body{
 			font-size: 20px;
 			color: #FFF;
 		}
-		&:first-child{
-		margin-top: 7px;
 	}
+	&__link{
+		display: flex;
+		height: 20px;
+		align-items: center;
+		color: #FFF;
+		font-family: Open Sans;
+		font-size: 8px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration: underline; 
 	}
 }
 
 .article {
+	float: inline-start;
+	width: 375px;
+	&__wrapper{
+		margin-top: 51px;
+		margin-left: 20px;
+	}
 	&__attachment {
 	}
+	.header{
+		&_asecond{
+			margin-top: 31px;
+		}
+	}
 }
-.attachment {
-	&__header {
-		color: #174180;
+
+.experience-block{
+	.roll-block{
+		&_extra-margin{
+		margin-top: 21px;
+		}
+		margin-top: 11px;
+	}
+	&__item{
 		font-family: Open Sans;
-		font-size: 2.68vw;
+		font-size: 8px;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 400;
 		line-height: normal;
-	}
-	&__list {
-	}
-	&__paragraph {
-	}
-	&__item {
+		margin-top: 11px;
 	}
 }
-.paragraph {
-	&__info {
+
+.roll-container{
+	.roll{
+		&__item{
+			position: relative;
+			margin-left: 10px;
+			margin-top: 16px;
+			&:first-child{
+				margin-top:6px;
+			}
+			&:before{
+				position: absolute;
+				top: 26px;
+				left: -10px;
+				content: ' ';
+				height: 3px;
+				width: 3px;
+				display: inline-block;
+				border-radius: 50%;
+				background-color: #56CCF2;
+				margin-top: -20px;
+			}
+		}
 	}
-	&__header {
+}
+
+.roll-block{
+	font-family: Open Sans; 
+	display: inline-block;
+	line-height: normal;
+	font-style: normal;
+	font-size: 12px;
+	width: 100%;
+	&__header{
+		display: flex;
+		flex-direction: row;
 	}
-	&__date {
+	&__title{
+		color: #4F4F4F;
+		font-weight: 700; 
+		width: 200px;
 	}
-	&__text {
+	&__date{
+		color: #828282;
+		font-style: italic;
+		font-weight: 600; 
+		margin-left: auto;
+		&_thin{
+			font-size: 10px;
+			font-style: italic;
+			font-weight: 300;
+		}
+	}
+	&__description{
+		color: #828282;
+		font-weight: 400; 
+	}
+}
+
+.task-list{
+	color: #4F4F4F;
+	font-family: Open Sans;
+	font-size: 8px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	&__item{
+		margin-top: 11px;
+		position: relative;
+		margin-left: 10px;
+		&:before{
+			position: absolute;
+			top: 24px;
+			left: -10px;
+			content: ' ';
+			height: 3px;
+			width: 3px;
+			display: inline-block;
+			border-radius: 50%;
+			background-color: #56CCF2;
+			margin-top: -20px;
+		}
 	}
 }
